@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="web.master.cs" Inherits="Web.web" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>维尔网-专业软考备考平台-</title>
+    <meta name="description" content=""/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+<link href="css/prettyPhoto.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+ <link href="css/owl.carousel.css" rel="stylesheet" />
+<link href="css/owl.theme.css" rel="stylesheet"/>
+<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'/>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="homepage">
+    <form id="form1" runat="server">
+    <div>
+        <header id="header">
+  <nav class="navbar navbar-inverse" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><i class="fa fa-sun-o"></i> 维 尔 网</a></div>
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Index.aspx">主页</a></li>
+          <li><a href="Video.aspx">精品课程</a></li>
+          <li><a href="Interest.aspx">兴趣小组</a></li>
+          <li><a href="News.aspx">新闻资讯</a></li>
+          <li><a href="practice.aspx">练习中心</a></li>
+</ul>
+         
+      </div>
+      </div>
+      <div style="float: right; padding-right: 49px; margin-top: -56px; color: wheat;">
+          <asp:Panel ID="PanelUserInfo" runat="server">
+              欢迎您，<a href="../UserCenter/UserIndex.aspx"><asp:Label ID="lblUserInfo" runat="server" Text=""></asp:Label></a>丨
+                    <asp:LinkButton ID="lbtnLoginOut" runat="server" OnClick="lbtnLoginOut_Click">注销</asp:LinkButton>
+          </asp:Panel>
+          <asp:Panel ID="PanelLogin" runat="server">
+              <div class="login">
+                  
+                  <a href="Login.aspx">登录</a>丨
+                <a href="Register.aspx">注册</a>
+              </div>
+          </asp:Panel>
+      </div>
+  </nav>
+</header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">Copyright &copy; 2017 江西师范大学软件学院工作室<a href="#" target="_blank" title="Software Edu">Software Edu</a> - Collect from <a href="#" title="软考教育" target="_blank">软考教育</a></div>
+      <div class="col-sm-6">
+        <div class="follow-us"> <a class="fa fa-facebook social-icon" href="#"></a> <a class="fa fa-twitter social-icon" href="#"></a> <a class="fa fa-linkedin social-icon" href="#"></a> <a class="fa fa-google-plus social-icon" href="#"></a> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    </form>
+</body>
+</html>

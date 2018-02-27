@@ -1,0 +1,133 @@
+﻿body {
+}
+image-1-1-1{
+    width:320px;
+    height:200px;
+    margin:0;
+}
+#image-1-1{
+    float:left;
+    height:50px;
+    width:100px;
+    background-color:#ff0000;
+}
+#image-1-2{
+    background-color:#4cff00;
+    height:50px;
+    width:200px;
+    float:right;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 56px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.comments{
+    width:1200px;
+    height:auto;
+    margin:0 auto; 
+    background-color:#fff;
+}
+.comments_text{
+    width:90%;
+    height:auto;
+    margin:10px auto;
+    text-align:center;
+}
+.commentsstyle{/*评论框TextBox的样式*/
+    margin-top:30px;
+    width:1000px;
+    height:150px;
+    resize:none;
+    border-radius:5px;
+    color:black;
+    line-height:24px;
+}
+.btncomments{/*评论按钮*/
+    width:80px;
+    text-align:center;
+    margin-left:85%;
+    font-size:15px;
+    vertical-align:middle;
+    margin-top:-30px;
+    border-radius:8px;
+}
+
+/*评论内容*/
+.comment_content{
+    width:100%;
+    height:auto;
+    margin-bottom:5px;
+}
+.user_photo{
+    vertical-align:middle;
+    display:inline-block;
+    margin-top:5px;
+    margin-left:20px;
+    margin-right:20px;
+    width:42px;
+    height:42px;
+    /*border:1px solid rgba(0, 0, 0, 0.25);*/
+    border-radius:10px;
+    overflow:hidden;
+    background-color:white;
+}
+.comment_content span{
+    vertical-align:middle;
+    display:inline-block;
+    margin-left:2%;
+}
+/*回复按钮*/
+.reply_comment{
+    margin-left:95%;
+}
+
+/*回复评论*/
+.reply_textbox{/*回复框*/
+
+   width:70%;
+   height:120px;
+   margin-left:25%;
+   margin-bottom:5px;
+   border:1px dotted #dcd9d9;
+}
+.txtReply{
+   display:inline-block;
+    margin:0 auto; 
+    width:75%;
+    height:95%;
+    resize:none;
+    margin-top:3px;
+    margin-left:2.5%;
+    border-radius:5px;
+    line-height:20px;
+}
+.btnReply{
+    margin-bottom:25px;
+    margin-left:15px;
+}
+
+.reply {
+    width: 90%;
+    height: auto;
+    margin-left: 10%;
+    padding-bottom: 2px;
+}
+.reply_contents{
+    width:100%;
+    height:auto;
+    border-bottom:1px dotted #dcd9d9;
+
